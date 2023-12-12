@@ -8,6 +8,5 @@
     <title>Document PHP</title>
 </head>
 <body>
-    <?php echo "teff" ?>
 </body>
 </html>
