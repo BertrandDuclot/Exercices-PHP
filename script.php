@@ -59,11 +59,29 @@ $permission = getPermission();*/
 ///////////////////////////////////////////////
 
 // Keep variable varlue with Static
-function foo(){
+/*function foo(){
     static $x = 1;
     return $x++;
 }
-
 echo foo() . "<br>";
-echo foo() . "<br>";
+echo foo() . "<br>";*/
 
+// Anonymous function
+
+$multiplier = 2;
+
+/*$multiply = function ($num) use ($multiplier) {
+    $multiplier = 5;
+    echo $num;
+    echo "<br>";
+    return $num * $multiplier;
+};*/
+
+$multiply = fn ($num) => $num * $multiplier;
+
+function sum($a, $b, $callback) {
+    return $callback($a + $b);
+};
+
+
+echo sum(5,2,$multiply);;
