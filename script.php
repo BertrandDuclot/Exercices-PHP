@@ -68,14 +68,14 @@ echo foo() . "<br>";*/
 
 // Anonymous function
 
-$multiplier = 2;
-
 /*$multiply = function ($num) use ($multiplier) {
     $multiplier = 5;
     echo $num;
     echo "<br>";
     return $num * $multiplier;
 };*/
+
+/*$multiplier = 2;
 
 $multiply = fn ($num) => $num * $multiplier;
 
@@ -84,4 +84,26 @@ function sum($a, $b, $callback) {
 };
 
 
-echo sum(5,2,$multiply);;
+echo sum(5,2,$multiply);;*/
+
+
+/////////////// Arrays //////////////
+
+/*$users = ['John', 'Jane', 'Bob'];
+
+// Filtering values
+$users = array_filter($users, fn($users) => $users !== 'Bob');
+
+echo "<pre>";
+print_r($users);
+echo "<pre>";*/
+
+
+// Exercices
+function colorCode(string $color) : int {
+    $colorArray = array("Red" => 1, "Blue" => 2);
+    echo $colorArray[$color];
+    return $colorArray[$color];
+}
+
+colorCode("Red");
