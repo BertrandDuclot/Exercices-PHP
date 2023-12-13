@@ -37,10 +37,10 @@ var_dump($authorization);*/
 
 // Constant : const FULL_NAME
 
-$nom = "John";
+/*$nom = "John";
 $prenom = "Davis";
 
-var_dump("hello " . " " . $nom . $prenom);
+var_dump("hello " . " " . $nom . $prenom);*/
 
 /*$nom = "John";
 $prenom = "Davis";
@@ -48,3 +48,22 @@ $message = "TEST MESSAGE ";
 $message .= $nom;
 
 var_dump($message);*/
+
+/*function getPermission () {
+    sleep(2);
+    return 2;
+}
+
+$permission = getPermission();*/
+
+///////////////////////////////////////////////
+
+// Keep variable varlue with Static
+function foo(){
+    static $x = 1;
+    return $x++;
+}
+
+echo foo() . "<br>";
+echo foo() . "<br>";
+
