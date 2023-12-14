@@ -99,11 +99,36 @@ print_r($users);
 echo "<pre>";*/
 
 
-// Exercices
+/* Exercices
 function colorCode(string $color) : int {
     $colorArray = array("Red" => 1, "Blue" => 2);
     echo $colorArray[$color];
     return $colorArray[$color];
 }
 
-colorCode("Red");
+colorCode("Red");*/
+
+
+/* Destructuring arrays
+
+$nums = ['example' => 5, 3, 9, 11];
+ 
+['example' => $a, 0 => $b] = $nums;
+
+echo $nums['example'];*/
+
+////////// OOP ///////////
+
+require_once 'Account.php';
+
+$myAccount = new Account;
+
+$myAccount->balance = 20;
+
+var_dump($myAccount->balance);
+echo '<br>';
+
+// Read const
+var_dump(Account::NAME);
+var_dump($myAccount::$count);
+
