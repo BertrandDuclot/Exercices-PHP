@@ -1,4 +1,22 @@
 <?php
+$title = 'Learn PHP From Scratch !';
+
+$firstName = 'John';
+$lastName = 'Doe';
+$fullName = $firstName . " " . $lastName;
+
+/*echo($fullName);
+echo "Hello my name is {$fullName}";*/
+
+$result = (string) 10;
+var_dump($result);
+
+$string = "test";
+echo $string[0];
+
+$date = date('2023', strtotime('1999-09-01'));
+echo $date;
+
 /*
 VARIABLE RULES:
 - All variables are prefixed with a dollar sign ($).
@@ -24,7 +42,7 @@ CONVENTIONS:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Learn PHP From Scratch</title>
+    <title><?= $title ?></title>
 </head>
 
 <body class="bg-gray-100">
