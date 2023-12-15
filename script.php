@@ -108,7 +108,6 @@ function colorCode(string $color) : int {
 
 colorCode("Red");*/
 
-
 /* Destructuring arrays
 
 $nums = ['example' => 5, 3, 9, 11];
@@ -131,4 +130,18 @@ echo '<br>';
 // Read const
 var_dump(Account::NAME);
 var_dump($myAccount::$count);
+
+// Anonymous Class
+
+class CurrentWeek {
+    public \DateTime $date;
+    public int $daysFrom = 0;
+}
+
+$currentWeek = new CurrentWeek();
+
+foreach ($currentWeek as $value){
+    var_dump($value);
+    
+}
 
