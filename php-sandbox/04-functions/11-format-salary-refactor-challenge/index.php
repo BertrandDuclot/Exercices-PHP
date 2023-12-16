@@ -12,7 +12,7 @@ $listings = [
     'id' => 2,
     'title' => 'Marketing Specialist',
     'description' => 'We are looking for a marketing specialist to develop and implement effective marketing strategies.',
-    'salary' => 60000,
+    'salary' => 60000, 
     'location' => 'New York',
     'tags' => ['Digital Marketing', 'Social Media', 'SEO']
   ],
