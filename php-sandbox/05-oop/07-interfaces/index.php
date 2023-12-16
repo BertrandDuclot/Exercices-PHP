@@ -1,3 +1,31 @@
+<?php
+  interface ContentInterface {
+    public function display();
+    public function edit();
+  }
+
+  class Article implements ContentInterface {
+    private $title;
+    private $content;
+
+    public function __construct($title, $content){
+      $this->title = $title;
+      $this->content = $content;
+    }
+
+    public function display() {
+      echo "<h2>{$this->title}</h2>";
+    }
+
+    public function edit() {
+      echo "Editing {$this->title}";
+    }
+  }
+
+  
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
