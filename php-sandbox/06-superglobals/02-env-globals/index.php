@@ -1,3 +1,14 @@
+<?php
+  putenv('DB_HOST=localhost');
+  putenv('DB_USER=root');
+
+  $host = etenv('DB_HOST');
+  var_dump($host);
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
