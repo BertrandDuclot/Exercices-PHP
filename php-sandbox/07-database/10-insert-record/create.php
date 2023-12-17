@@ -1,3 +1,16 @@
+<?php
+
+require 'database.php';
+
+if($SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+  $title = htmlspecialchars($_POST['title']);
+  $body = htmlspecialchars($_POST['body']);
+
+  echo $title, $body;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +27,7 @@
       <h1 class="text-3xl font-semibold">My Blog</h1>
     </div>
   </header>
-  <div class="flex justify-center mt-10">
+  <div class="flex justify-center mt-6">
     <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
       <h1 class="text-2xl font-semibold mb-6">Create Blog Post</h1>
       <form method="post">
